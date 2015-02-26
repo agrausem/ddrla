@@ -5,4 +5,8 @@
 * autotools ✗
 * DOAP ✓
 * README.md ✗
-* check how pitivi handles the installation, Python app without a .py extension?
+* How to handle the "build steps" of a GNOME Python app? ✗
+  Some examples:
+  * pitivi
+  * gnome-music
+  * gnome-tweak-tool
