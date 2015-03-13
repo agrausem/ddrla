@@ -88,12 +88,9 @@ class TestLogParser(unittest.TestCase):
     def testGetLogsDictionnary(self):
         log_dict = self.parser.getLogsDictionnary()
         self.assertEqual(len(log_dict), 30204)
-	map(lambda e: self.assertTrue(len(e) == 3), log_dict)
-	self.assertEqual(log_dict[0], ['0x00000000', '0xC2629000', '+'])
-	self.assertEqual(log_dict[-1], ['0xE8D4A51000', '0x0C365000', '?'])
+        map(lambda e: self.assertTrue(len(e) == 3), log_dict)
+        self.assertEqual(log_dict[0], ['0x00000000', '0xC2629000', '+'])
+        self.assertEqual(log_dict[-1], ['0xE8D4A51000', '0x0C365000', '?'])
 
     def testGetLogsStatistics(self):
-	log_stat = self.parser.getLogsStatistics()
-
-if __name__ == '__main__':
-    unittest.main()
+	    log_stat = self.parser.getLogsStatistics()
